@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 245, 239, 230;
+  --background-start-rgb: 13, 9, 7;
+  --background-end-rgb: 8, 5, 4;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: radial-gradient(circle at 50% 35%, #23140C 0%, #110A07 55%, #080403 100%);
+  min-height: 100vh;
+  overflow: hidden;
+  user-select: none;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbars with warm walnut tones */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(20, 12, 8, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #50311D;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7B4C2D;
+}
